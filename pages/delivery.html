@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="../img/favicon.ico" type="image/gif" sizes="16x16">
+    <title>Delivery</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/gif" sizes="16x16">
+    <meta name="description" content="Venta de tortas y pasteles">
+    <meta name="keywords" content="reposteria, tortas, pasteles, macarrones, catering, tortas caseras, torta de chocolate, cake design, casa de tortas, tortas decoradas">
+</head>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="../index.html"><img src="../img/logo_bc.jpg" alt="Logo BC" width= "60px" height="60px"></a>
+                <h1>BCakeSweet</h1>
+            </div>
+            <div>
+                <nav class="header__menu">
+                    <ul>
+                        <li><a class ="header__menu__title" href="./bcakesweet.html">BCAKESWEET</a></li>
+                        <li><a href="./product.html">PRODUCTOS</a></li>
+                        <li><a href="./commerce.html">LOCAL</a></li>
+                        <li><a href="./delivery.html">DELIVERY</a></li>
+                        <li><a href="./contact.html">CONTACTO</a></li>
+                        <div class="header__menu__logo">
+                            <li><a href="https://instagram.com/"><img class="img_social" src="../img/logo_instagram.svg" alt="Logo Instagram" width="40"></a></li>
+                            <li><a href="https://wa.me/5211234567890?text=Hola!%20Me%20interesan%20tus%20productos!"><img class="img_social" src="../img/logo_whatsapp.svg" alt="Logo Whatsapp"></a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="section_master">
+            <!-- Cuando veamos Backend se resolverá method -->
+            <!-- <form action="name" method="" enctype="text/plain"> -->
+            <form class="delivery_form">
+                <fieldset class="delivery">
+                    <legend class="delivery__title">-¡ Si, hacemos delivery !-</legend>
+                    <p>Contactate con nosotros para coordinar los días y horarios para la entrega</p>
+                    <!-- Aquí irán los elementos de formulario -->
+                    <div class="delivery__column">
+                        <div class="delivery__column__first">
+                            <div>
+                                <div><label for="name_id">NOMBRE:</label></div>
+                                <div><input class="input_data" id="name_id" type="text" placeholder="Introducir nombre" name="name_id"></div>
+                            </div>
+                        
+                            <div>
+                                <div><label for="email_id">EMAIL:</label></div>
+                                <div><input class="input_data" id="email_id" type="email" placeholder="Introducir email" name="email_id"></div>
+                            </div>
+                        
+                            <div>
+                                <div><label for="tel_id">TELEFONO:</label></div>
+                                <div><input class="input_data" id="tel_id" type="number" placeholder="Introducir teléfono" name="tel_id"></div>
+                            </div>
+
+                            <div>
+                                <div><label for="data_source">¿Dónde nos conociste?:</label></div>
+                                <div>
+                                    <select class="input_data" name="data_source" id="data_source">
+                                        <option value="sel" selected>Seleccione...</option>
+                                        <option value="fb">Facebook</option>
+                                        <option value="tw">Twitter</option>
+                                        <option value="img">Instagram</option>
+                                        <option value="am">Amigo/a</option>
+                                        <option value="web">Web</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <!-- Checkbox -->
+                                <div><label for="check">¿Queres suscribirte al newsletter?</label></div>
+                                <div><input id="check" type="checkbox" name="acepta" value="1"></div>
+                            </div>
+                        </div>
+
+                        <div class="delivery__column__second">
+                            <div>
+                                <div><label for="msj_id" >MENSAJE ADICIONAL:</label></div>
+                                <div><textarea class="input_data__2" name="msj_id" id="msj_id" cols="30" rows="10" placeholder="Introducir mensaje"></textarea></div>
+                            </div>
+                            
+                            <!-- Button -->
+                            <div class="delivery__column__second__button">
+                                <div><input type="submit" class="btn btn-info" value="Enviar"></div>
+                                <div><input type="reset" class="btn btn-info" value="Borrar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer id="contact">
+        <div class="contact__paid">
+            <h3 class="contact__title">Medios de pago</h3>
+            <div class="contact__photo">
+                <div>
+                    <img src="../img/logo_visa.jpg" alt="Logo Visa"  width="45" height="25">
+                    <img src="../img/logo_mastercard.jpg" alt="Logo Mastercard" width="45" height="25">
+                </div>
+                <div>
+                    <img src="../img/logo_cash.jpg" alt="Logo Cash"  width="45" height="25">
+                    <img src="../img/logo_mercadopago.jpg" alt="Logo Mercadopago" width="45" height="25">  
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__contact">
+            <h3 class="contact__title">Contactanos</h3>
+            <div class="contact__contact__block">
+                <div class="contact__contact__data">
+                    <img src="../img/logo_cellphone.svg" alt="Logo Cellphone"  width="30" height="30" >  
+                    <p>1166556655</p>
+                </div>
+                <div class="contact__contact__data">
+                    <img src="../img/logo_email.svg" alt="Logo Email" width="30" height="30"  >  
+                    <p>bc@gmail.com</p>
+                </div>
+                <div class="contact__contact__data">
+                    <img src="../img/logo_direction.svg" alt="Logo Direction"  width="30" height="30" >  
+                    <p>Av. Centeno 555, Vicente Lopez</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="contact__title">Redes sociales</h3>
+            <div class="contact__social">
+                <li><a href="https://instagram.com/"><img class="img_social" src="../img/logo_instagram.svg" alt="Logo Instagram"></a></li>
+            </div>
+        </div>
+        
+        <div class="contact__email">
+            <h3 class="contact__title">Newsletter</h3>
+            <div class="contact__email__box">
+                <form class="form_footer">
+                    <fieldset>
+                        <input class="input_data" id="email_id" type="email" placeholder="Introducir email" name="email_id">
+                        <p><input type="image" name="botondeenvio" src="../img/logo_send.svg" width="30" height="30" alt="Enviar formulario"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
